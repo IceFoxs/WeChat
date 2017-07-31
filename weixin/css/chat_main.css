@@ -1,0 +1,85 @@
+#chat_main {
+	height: 100%;
+	width: 100%;
+	/*min-width: 400px;
+	min-height: 100px;*/
+	position: fixed;
+	top:0px;left: 0px;
+}
+#friend_circle{
+	position: absolute;
+	width: 100%;
+	top:22px;
+	bottom:0px;
+	background-color:#FFFFFF ;
+	overflow-x:hidden;
+	float:left;
+	z-index: 1;
+}
+#plus_click{
+	height: 165px;
+	width:100px;
+	background-color: #393A3E;
+	position:fixed;
+	top:72px;
+	right:40px;
+	float: right;
+	z-index: 10;
+	visibility: hidden;
+}
+.plus_one{
+	height: 40px;
+	width: auto;
+}
+.plus_com{
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	color: #FFFFFF;
+	display: inline-block;
+    position: relative;
+	top:-15px;
+}
+.plus_img{
+	height:30px;
+	width: 30px;
+	margin: 5px 5px 5px 5px;
+	display: inline-block;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+}
+#plus_group_chat_img{
+	
+	background: url(../img/groupchat.svg);
+	background-size:contain;
+	background-position: 80% 80%;
+	
+}
+#plus_scan_img{
+	background-origin: content-box;
+	background: url(../img/scan_white.svg);
+	background-size:contain;
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+}
+#plus_help_img{
+	background-origin: content-box;
+	background:url(../img/help.svg);
+	background-size:contain;
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+}
+#plus_add_friend_img{
+	background-origin: content-box;
+	background:url(../img/add_friend.svg);
+	background-size:contain;
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+}
+#plus_pay_img{
+	background-origin: content-box;
+	background:url(../img/pay.svg);
+	background-size:contain;
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,93 @@
+
+.chat_com{
+	height:65px;
+	width:100%;
+	background-color:#FFFFFF ;
+	position: relative;
+}
+.chat_time{
+	color: #B3B4B6;
+	height:30px;
+	width: 90px;
+	display: inline-block;
+	position: absolute;
+	top:10px;
+	right: 10px;
+	text-align: center;
+}
+.chat_name{
+	height:35px;
+	display: inline-block;
+	width: auto;
+	line-height:35px;
+	position:absolute;
+	top:10px;
+	font-size: 20px;
+}
+#chat_anhu_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/anhu.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+#chat_baiyun_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/B.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chat_chengbin_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/C1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chat_chengfeng_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/C2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chat_dufei_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/D.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chat_fangyuan_img{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 5px 0px 5px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/F.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

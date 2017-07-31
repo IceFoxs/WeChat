@@ -1,0 +1,435 @@
+#center_content{
+	position: absolute;
+	width: 100%;
+	top:72px;
+	bottom: 50px;
+	background-color:#EBEBEB ;
+	overflow: scroll;
+	overflow-x:hidden;
+}
+#moments,#scan,#shake,#search-in,
+#near_people,#float_bottle,#shopping,
+#small_program,#game,#wallet,#collect,#photo_album,
+#card_bag,#expression,#settings,#public_accounts,
+#new_friend,#tag,#group_chat,#anhu,#baiyun,
+#chengbin,#chengfeng,#dufei,#fangyuan
+{
+	height: 55px;
+	width:100%;
+	padding-right: 20px;
+	background-color:#FFFFFF ;
+}
+#moments_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/friend.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#moments_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+
+#scan_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/scan.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#scan_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#shake_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/shake.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#shake_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#search-in_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/searchin.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#search-in_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#near_people_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/near_people.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#near_people_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#float_bottle_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/float_bottle.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#float_bottle_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#shopping_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/shopping.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#shopping_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#game_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/game.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#game_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#small_program_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/small_program.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*#small_program_name{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}*/
+#me_photo{
+	height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;	
+    
+}
+
+#me_photo_img{
+	text-align: center;
+	display: inline-block;
+	height: 88px;
+	width: 88px;
+	margin:0px 20px 0px 20px;
+	background: url(../img/me_photo_img.jpg);
+	/*background-position: 80% 80%;*/
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	top:6px;
+}
+#me_photo_name{
+	height: 100px;
+	display: inline-block;
+	position: relative;
+}
+#me_photo_name_normal{
+	height: 50px;
+	display: block;
+	text-align:left;
+	line-height: 50px;
+	position: relative;
+	bottom: 10px;
+	color:#A1A1A1;
+}
+#me_photo_name_unnormal{
+	display: block;
+	height:50px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 50px;
+   
+}
+#me_photo_QR{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: url(../img/photo_QR.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position:absolute ;
+	right: 40px;
+	top:60px;
+}
+
+#wallet_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/wallet.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#collect_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/collect.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#photo_album_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/photo_album.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#card_bag_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/card_bag.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#expression_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/express.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#settings_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/setting.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#group_chat_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/group_talk.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+#new_friend_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/new_friend.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#tag_img{
+    display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/label.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#public_accounts_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/public_accounts.svg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#anhu_img{
+    display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/anhu.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#baiyun_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/B.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chengfeng_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/C1.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#chengbin_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/C2.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#dufei_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/D.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#fangyuan_img{
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	padding: 3px 0px 3px 0px;
+	margin:0px 22px 0px 22px;
+	background: url(../img/F.jpg);
+	background-position: 80% 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#shake_name,#search-in_name,#float_bottle_name,#shopping_name,#game_name,
+#small_program_name,#wallet_name,#collect_name,
+#expression_name,#card_bag_name,#photo_album_name,
+#settings_name,#near_people_name,#scan_name,#moments_name,
+#group_chat_name,#public_accounts_name,#new_friend_name,#tag_name,
+#anhu_name,#baiyun_name,#chengfeng_name,#chengbin_name,
+#dufei_name,#fangyuan_name
+{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top:-19px;
+}
+.char_order{
+	height: 25px;
+	width: 100%;
+	line-height:25px;
+	text-indent:20px;
+	color: #878787;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>微信</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/chat_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/top_slider.css"/>
+		<link rel="stylesheet" href="css/top_menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/center_content.css"/>
+	    <link rel="stylesheet" href="css/bottom_menu.css" />
+	    <link rel="stylesheet" href="css/chat_content.css" />
+	    <link rel="stylesheet" href="css/friend_circle.css" />
+	    <link rel="stylesheet" href="css/personal_chat.css" />
+	    <script src="js/jquery.backgroundpos.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/click.js" type="text/javascript" charset="utf-8"></script>
+	    <script>
+	            window.add_status=false;
+				$(document).ready(function(){
+				document.addEventListener("backbutton",personal_chat_return(),true);
+				  $("#bottom_chat").click(chat_change());
+				  $("#address_list_content").hide();
+				  $("#found_content").hide();
+				  $("#me_content").hide();	   
+				});	
+		</script>
+	</head>
+	<body>
+		<div id="chat_main">
+			    <div id="top_slider">
+			    	<span id="slider_signal_name">中国移动4G</span>
+			    	<div id="slider_right">
+			    		<div id="signal"></div>
+			    		<div id="battery">63</div>
+			    		<span id="time">07:23</span>
+			    	</div>
+			    </div>
+				<div id="top_menu">
+					<span id="top_menu_name">微信</span>
+					<div id="top_menu_right">
+						<input id="search" type="button"/><input id="add" type="button" onclick="add_clicked()" />
+				    </div>
+				</div>
+					<div id="FC_top">
+						<div id="FC_return" onclick="return_click()"></div><div id="FC_name">朋友圈</div>
+						<div id="FC_camera"></div>
+					</div>
+					<div id="top_personal_chat">
+						<div id="top_personal_chat_return" onclick="personal_chat_return()"></div><div id="top_personal_chat_name">IceFox</div>
+						<div id="top_personal_chat_right"></div>
+					</div>
+					<div id="personal_chat">
+						
+					</div>
+					<div id="friend_circle">
+					    <div id="FC_bg">
+					    	<div id="FC_photo_name">IceFox</div>
+					    	<div id="FC_photo"></div>
+					    </div>
+					    <div id="FC_message">
+					    	<div id="FC_message_icefox">
+					    	      <div id="FC_message_icefox_photo"></div>
+					    	      <div id="FC_message_icefox_name">IceFox</div>
+					    	      <div id="FC_message_icefox_name_say">今天天气很好！！！！！:）</div>
+				                  <div id="FC_message_icefox_talk"></div>
+					    	</div>
+					    	<hr size="3" color="#E0E0E0"/>
+					    	<div id="FC_message_icefox">
+					    	      <div id="FC_message_icefox_photo"></div>
+					    	      <div id="FC_message_icefox_name">IceFox</div>
+					    	      <div id="FC_message_icefox_name_say">哈哈哈哈哈哈。。。。。。</div>
+				                  <div id="FC_message_icefox_talk"></div>
+					    	</div>
+					    	<hr size="3" color="#E0E0E0"/>
+					    	<div id="FC_message_icefox">
+					    	      <div id="FC_message_icefox_photo"></div>
+					    	      <div id="FC_message_icefox_name">IceFox</div>
+					    	      <div id="FC_message_icefox_name_say">来一局王者农药????。。。。:(</div>
+				                  <div id="FC_message_icefox_talk"></div>
+					    	</div>
+					    	<hr size="10" color="#E0E0E0"/>
+					    </div>
+				    </div>
+				<div id="plus_click">
+					  <hr size=3  color=black />
+					  <div id="plus_group_chat" class="plus_one">
+					  	<div id="plus_group_chat_img"class="plus_img" ></div>
+                        <div id="plus_group_chat_name" class="plus_com">发起群聊</div>
+                      </div>
+                      <hr size=3  color=black />
+                       <div id="plus_add_friend" class="plus_one">
+                       	 <div id="plus_add_friend_img"class="plus_img"></div>
+                         <div id="plus_add_friend_name" class="plus_com">添加朋友</div>
+                      </div>
+                      <hr size=3  color=black />
+                       <div id="plus_scan" class="plus_one">
+                       		<div id="plus_scan_img" class="plus_img"></div>
+                            <div id="plus_scan_name" class="plus_com">扫一扫</div>
+                      </div>
+                      <hr size=3  color=black />
+                      <div id="plus_pay" class="plus_one">
+                       	  <div id="plus_pay_img"class="plus_img"></div>
+                         <div id="plus_pay_name" class="plus_com">收付款</div>
+                      </div>
+                      <hr size=3  color=black />
+                      <div id="plus_help" class="plus_one">
+                      	 <div id="plus_help_img"class="plus_img"></div>
+                      <div id="plus_help_name" class="plus_com">帮助与反馈</div>
+                      </div>
+				</div>
+				<div id="center_content">
+				    <div id="chat_content">
+				    	  <div id="chat_anhu" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_anhu_img"><div class="new_message" style="top:4px;right: -7px;">1</div></div> 
+				    	  	    <div id="chat_anhu_name" class="chat_name">安琥</div> 
+				    	  	    <div class="chat_time">7月30日</div>
+				    	  </div>
+				    	  <hr size=3   />
+				    	  <div id="chat_baiyun" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_baiyun_img"></div>
+				    	  	    <div id="chat_baiyun_name" class="chat_name">白云</div> 
+				    	  	    <div class="chat_time">07:23</div>
+				    	  </div>
+				    	  <hr size=3   />
+				    	  <div id="chat_chengbin" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_chengbin_img"></div>
+				    	  	    <div id="chat_chengbin_name" class="chat_name">程斌</div> 
+				    	  	    <div class="chat_time">7月25日</div>
+				    	  </div>
+				    	  <hr size=3   />
+				    	  <div id="chat_chengfeng" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_chengfeng_img"></div> 
+				    	  	    <div id="chat_chengfeng_name" class="chat_name">程峰</div> 
+				    	  	    <div class="chat_time">周五</div>
+				    	  </div>
+				    	  <hr size=3   />
+				    	  <div id="chat_dufei" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_dufei_img"></div> 
+				    	  	    <div id="chat_dufei_name" class="chat_name">杜飞</div> 
+				    	  	    <div class="chat_time">12月31日</div>
+				    	  </div>
+				    	  <hr size=3   />
+				    	  <div id="chat_fangyuan" class="chat_com" onclick="personal_chat_click(this)">
+				    	  	    <div id="chat_fangyuan_img"></div> 
+				    	  	    <div id="chat_fangyuan_name" class="chat_name">方圆</div> 
+				    	  	    <div class="chat_time">8月1日</div>
+				    	  </div>
+				    </div>
+				    <div id="address_list_content">   
+				    	<div id="new_friend">
+				    		<div id="new_friend_img"></div><div id="new_friend_name">新的朋友</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="group_chat">
+				    		<div id="group_chat_img"></div><div id="group_chat_name">群聊</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="tag">
+				    		<div id="tag_img"></div><div id="tag_name">标签</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="public_accounts">
+				    		<div id="public_accounts_img"></div><div id="public_accounts_name">公众号</div>
+				    	</div>
+				    	<div class="char_order">A</div>
+				    	<div id="anhu">
+				    		
+				    		<div id="anhu_img"></div><div id="anhu_name">安琥</div>
+				    	</div>
+				    	<div class="char_order">B</div>
+				    	<div id="baiyun">
+				    		<div id="baiyun_img"></div><div id="baiyun_name">白云</div>
+				    	</div>
+				    	<div class="char_order">C</div>
+				    	<div id="chengbin">
+				    		<div id="chengbin_img"></div><div id="chengbin_name">程斌</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="chengfeng">
+				    		<div id="chengfeng_img"></div><div id="chengfeng_name">程峰</div>
+				    	</div>
+				    	<div class="char_order">D</div>
+				    	<div id="dufei">
+				    		   <div id="dufei_img"></div><div id="dufei_name">杜飞</div>
+				    	</div>
+				    	<div class="char_order">F</div>
+				    	<div id="fangyuan">
+				    	   <div id="fangyuan_img"></div><div id="fangyuan_name">方圆</div>
+				    	</div>	
+				    	
+				    </div>
+				    <div id="found_content"> 
+				    	<br />
+				    	<div id="moments" onclick="friend_click()">
+				    		<div id="moments_img"></div><div id="moments_name">朋友圈</div>
+				    	</div>
+				    	<br />
+				        <div id="scan">
+				    		<div id="scan_img"></div><div id="scan_name">扫一扫</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="shake">
+				    		<div id="shake_img"></div><div id="shake_name">摇一摇</div>
+				    	</div>
+				    	<br />
+				    	<div id="search-in">
+				    		<div id="search-in_img"></div><div id="search-in_name">搜一搜</div>
+				    	</div>
+				    	<br />
+				    	<div id="near_people">
+				    		<div id="near_people_img"></div><div id="near_people_name">附近的人</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="float_bottle">
+				    		<div id="float_bottle_img"></div><div id="float_bottle_name">漂流瓶</div>
+				    	</div>
+				    	<br />
+				    	<div id="shopping">
+				    		<div id="shopping_img"></div><div id="shopping_name">购物</div>
+				    	</div>
+				    	<hr size=3   />
+				    	<div id="game">
+				    		<div id="game_img"></div><div id="game_name">游戏</div>
+				    	</div>
+				    	<br />
+				    	<div id="small_program">
+				    		<div id="small_program_img"></div><div id="small_program_name">小程序</div>
+				    	</div>
+				    </div>
+				    <div id="me_content"> 
+				    	  <br/>
+				    	<div id="me_photo">
+					    	<div id="me_photo_img"></div>
+					    	<div id="me_photo_name">
+					    	<span id="me_photo_name_unnormal">IceFox</span>
+					    	  <span id="me_photo_name_normal">微信号：icefox</span>
+					    	</div>
+					    	<div id="me_photo_QR"></div>
+				    	</div>
+				    	<br />
+				        <div id="wallet">
+				    		<div id="wallet_img"></div><div id="wallet_name">钱包</div>
+				    	</div>
+				    	<br />
+				        <div id="collect">
+				    		<div id="collect_img"></div><div id="collect_name">收藏</div>
+				    	</div>
+				    	<hr size=3   />
+				         <div id="photo_album">
+				    	    <div id="photo_album_img"></div><div id="photo_album_name">相册</div>
+				        </div>
+				        <hr size=3   />
+				        <div id="card_bag">
+				    	     <div id="card_bag_img"></div><div id="card_bag_name">卡包</div>
+				        </div>
+				        <hr size=3   />
+				        <div id="expression">
+				    	     <div id="expression_img"></div><div id="expression_name">表情</div>
+				        </div>
+				        <br />
+				        <div id="settings">
+				    		<div id="settings_img"></div><div id="settings_name">设置</div>
+				    	</div>
+				    </div>
+				</div>
+				<div id="bottom_personal_chat">
+					<div id="bottom_personal_chat_voice"></div>
+					<div id="bottom_personal_chat_box">
+					     <input id="bottom_personal_chat_input" type="text" />
+					</div>
+					<div id="bottom_personal_chat_smile"></div>
+					<div id="bottom_personal_chat_add"></div>
+				</div>
+				<div id="bottom_menu">
+					<div id="bottom_chat" onclick="chat_click()">
+						<div id="bottom_chat_img"">
+							
+						</div>
+						<div id="bottom_chat_name">微信</div>
+						<div class="new_message">1</div>
+					</div>
+					<div id="bottom_address_list" onclick="address_list_click()">
+						<div id="bottom_address_list_img"></div>
+						<div id="bottom_address_list_name">通讯录</div>
+					</div>
+					<div id="bottom_found" onclick="found_click()">
+						<div id="bottom_found_img" ></div>
+						<div id="bottom_found_name">发现</div>
+					</div>
+					<div id="bottom_me" onclick="me_click()">
+						<div id="bottom_me_img"></div>
+						<div id="bottom_me_name">我</div>
+					</div>
+				
+				</div>	
+		</div>
+	</body>
+
+</html>
